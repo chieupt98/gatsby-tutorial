@@ -10,7 +10,7 @@ const IndexPage = ({ data } : any) => {
      {
        allPrismicPost?.nodes?.map(({data} : any) => (
          <article key={data.title}>
-           <div>{data.title.text}</div>
+           <div>{data.title.text} Triggered</div>
            <img width={300} src={data.image.url} alt={data.image.alt}></img>
          </article>
        ))
